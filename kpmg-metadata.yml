@@ -1,6 +1,6 @@
-kpmg-code/category: 'reusable-component | sandbox | infrastructure-code | source-code | helper-library #delete as required'
+kpmg-code/category: reusable-component
 kpmg-code/cmdb:
   kpmg-uk/recharger:
     id: <insert id here>
 kpmg-code/metadata_version: https://github.com/KPMG-UK/kpmg-metadata-schema/blob/main/versions/v1.0/kpmg-schema.yml
-kpmg-code/service_name: <insert service name here>
+kpmg-code/service_name: KPMG Terraform Modules
