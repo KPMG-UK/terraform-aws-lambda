@@ -1,0 +1,7 @@
+name: Terraform module validate
+
+on: pull_request
+
+jobs:
+  terraform-module-validate:
+    uses: KPMG-UK/github-actions-library/.github/workflows/terraform-module-validate-pr.yml@main
