@@ -1,0 +1,23 @@
+# kpmg-security workflow
+#
+# This is the kpmg-security workflow, it will ensure the weekly scans of a variety of different security initiatives within KPMG UK.
+#
+# For information on what has been introduced for scanning
+# stay up to date: https://github.com/KPMG-UK/kpmg-security-shared-workflows
+#
+# DO NOT EDIT BEYOND THIS POINT
+
+name: "kpmg-security"
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 16 * * 6"
+  workflow_dispatch:
+
+jobs:
+  kpmg-security:
+    uses: KPMG-UK/kpmg-security-shared-workflows/.github/workflows/kpmg-security.yaml@v1.0
+    with:
+      SECURITY_CONFIG: ${{vars.KPMG_SECURITY_CONFIG}}
